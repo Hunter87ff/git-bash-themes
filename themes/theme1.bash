@@ -25,6 +25,8 @@ TICK="✔"
 CROSS="✘"
 RIGHT_ARROW="➜"
 
+BRANCH_COLOR=$BOLD_GREEN
+
 # Special characters including zsh-style arrow/powerline separators
 # Note: These require a font with powerline symbols (e.g., Cascadia Code PL, Fira Code, etc.)
 ARROW_RIGHT=""  # Unicode: \uE0B0
@@ -61,6 +63,7 @@ git_status() {
     
     if ! git diff-index --quiet HEAD --; then
         git_status+="${RED}${CROSS}${RESET}"    # unstaged changes
+        BRANCH_COLOR=$BOLD_RED
     fi
     
     # Check for untracked files - limit search for performance
@@ -69,7 +72,7 @@ git_status() {
     fi
     
     # Output formatted git information
-    echo -e " ${BOLD_PURPLE}git:(${BOLD_CYAN}$branch${BOLD_PURPLE})${git_status}${RESET}"
+    echo -e " ${BOLD_BLUE}git:(${BRANCH_COLOR}$branch${BOLD_BLUE})${git_status}${RESET}"
 }
 
 
@@ -111,8 +114,8 @@ set_prompt() {
     
     # Set the actual prompt with zsh-style arrows and segments
     # First line with segmented design
-    PS1="${BOLD_GREEN}${RIGHT_ARROW}${BOLD_CYAN} ${pwd_formatted}${BOLD_BLACK}"
-    PS1+="${git_info}${error_indicator} $ ${RESET}"
+    PS1="${BOLD_GREEN}${RIGHT_ARROW} ${BOLD_CYAN} ${pwd_formatted}${BOLD_BLACK}"
+    PS1+="${git_info}${error_indicator} ${BOLD_YELLOW}$ ${RESET}"
     
     # Second line if wanna customize
     # PS1+="\n${BOLD_BLUE}╰${BOLD_GREEN}${arrow_right}${BOLD_YELLOW}${arrow_right}${BOLD_RED}${arrow_right} ${RESET}"
@@ -124,7 +127,8 @@ set_prompt() {
 # Set PROMPT_COMMAND to use our custom prompt function
 PROMPT_COMMAND="set_prompt"
 
-# Additional aliases to mimic zsh functionality
+
+# Command aliases (few commands are configured for Windows)
 alias ll="ls -lah --color=auto"
 alias la="ls -A --color=auto"
 alias l="ls -CF --color=auto"
@@ -134,6 +138,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias md="mkdir -p"
 alias rd="rmdir"
+alias cls="clear"
+alias rmf="rm -f"
+alias install="winget install"
+
 
 # Enable programmable completion
 if [ -f /usr/share/bash-completion/bash_completion ]; then
