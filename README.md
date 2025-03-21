@@ -19,7 +19,7 @@ Bash/zsh inspired themes for Git Bash on Windows that enhance your terminal expe
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/username/git-bash-themes.git
+git clone https://github.com/hunter87ff/git-bash-themes.git
 cd git-bash-themes
 ```
 
