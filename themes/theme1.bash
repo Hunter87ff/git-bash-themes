@@ -18,7 +18,7 @@ BOLD_GREEN="\[\033[1;32m\]"
 BOLD_YELLOW="\[\033[1;33m\]"
 BOLD_BLUE="\[\033[1;34m\]"
 BOLD_PURPLE="\[\033[1;35m\]"
-BOLD_CYAN="\[\033[1;36m\]"
+BOLD_CYAN="\[\e[1;96m\]"
 BOLD_WHITE="\[\033[1;37m\]"
 
 TICK="✔"
@@ -139,8 +139,12 @@ alias ....="cd ../../.."
 alias md="mkdir -p"
 alias rd="rmdir"
 alias cls="clear"
+alias mf="touch"
 alias rmf="rm -f"
 alias install="winget install"
+alias uninstall="winget uninstall"
+alias update="winget upgrade"
+alias installed="winget list"
 
 
 # Enable programmable completion
