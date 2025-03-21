@@ -32,6 +32,16 @@ cd git-bash-themes
 3. Restart Git Bash for changes to take effect
 
 
+
+## Don't have git installed ?
+- try this -
+[Download Git](https://git-scm.com/downloads/win)
+- or this 
+```sh
+winget install --id Git.Git -e --source winget
+```
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
