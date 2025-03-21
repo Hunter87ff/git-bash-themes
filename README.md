@@ -1,1 +1,43 @@
 # git-bash-themes
+
+A collection of themes for Git Bash on Windows that enhance your terminal experience with custom colors, fonts, and layouts.
+
+## Features
+
+- Multiple pre-configured color schemes
+- Easy installation and setup
+- Customizable prompt styles
+- Font configurations
+- Terminal window settings
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/username/git-bash-themes.git
+   cd git-bash-themes
+   ```
+
+2. Run the installation script:
+> [!NOTE]
+> Make sure to run this inside git bash terminal. If you run this in Windows Command Prompt, it will not work.
+```bash
+./install.sh
+```
+
+3. Restart Git Bash for changes to take effect
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-theme`)
+3. Commit your changes (`git commit -m 'Add some amazing theme'`)
+4. Push to the branch (`git push origin feature/amazing-theme`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
