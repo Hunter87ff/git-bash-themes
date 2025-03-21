@@ -8,6 +8,11 @@ Bash/zsh inspired themes for Git Bash on Windows that enhance your terminal expe
 - Font configurations
 - Terminal window settings
 
+## Screenshot
+![Screenshot](https://github.com/user-attachments/assets/9c7f300c-cb45-4584-8d9a-d760ea8d0607)
+
+
+
 ## Installation
 
 1. Clone this repository:
