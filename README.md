@@ -17,17 +17,12 @@ Bash/zsh inspired themes for Git Bash on Windows that enhance your terminal expe
  > [!NOTE]
  > Make sure these commands in git bash terminal. If you run this in Windows Command Prompt, then it  might not work properly.
 
-1. Clone this repository:
+1. Run this command
 ```bash
 git clone https://github.com/hunter87ff/git-bash-themes.git
 cd git-bash-themes
-```
-
-2. Run the installation script:
-
- ```bash
  ./install.sh
- ```
+```
 
 3. Restart Git Bash for changes to take effect
 
