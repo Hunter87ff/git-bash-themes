@@ -22,6 +22,9 @@ Bash/zsh inspired themes for Git Bash on Windows that enhance your terminal expe
 git clone https://github.com/hunter87ff/git-bash-themes.git
 cd git-bash-themes
  ./install.sh
+cd ../
+rm -r -f git-bash-themes
+echo "Theme Installed!! now restart terminal..."
 ```
 
 3. Restart Git Bash for changes to take effect
