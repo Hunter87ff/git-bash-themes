@@ -24,7 +24,6 @@ cd git-bash-themes
  ./install.sh
 cd ../
 rm -r -f git-bash-themes
-echo "Theme Installed!! now restart terminal..."
 ```
 
 3. Restart Git Bash for changes to take effect
