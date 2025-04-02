@@ -15,7 +15,7 @@ Bash/zsh inspired themes for Git Bash on Windows that enhance your terminal expe
 
 ## Installation
  > [!NOTE]
- > Make sure these commands in git bash terminal. If you run this in Windows Command Prompt, then it  might not work properly.
+ > Make sure to run these commands in git bash terminal. If you run this in Windows Command Prompt, then it  might not work properly.
 
 1. Run this command
 ```bash
