@@ -1,6 +1,6 @@
 # git-bash-themes
 
-Bash/zsh inspired themes for Git Bash on Windows that enhance your terminal experience with custom colors, fonts, layouts and command aliases.
+Bash/zsh inspired themes for Bash on Windows and Linux that enhance your terminal experience with custom colors, fonts, layouts and command aliases.
 
 ## Features
 - Easy installation and setup
@@ -15,24 +15,24 @@ Bash/zsh inspired themes for Git Bash on Windows that enhance your terminal expe
 
 ## Installation
  > [!NOTE]
- > Make sure to run these commands in git bash terminal. If you run this in Windows Command Prompt, then it  might not work properly.
+ > Make sure to run these commands in git bash terminal and have git installed. If you run this in Windows Command Prompt, then it  might not work properly.
 
 1. Run this command
 ```bash
-git clone https://github.com/hunter87ff/git-bash-themes.git
-cd git-bash-themes
- ./install.sh
+bash #switch to bash shell
+git clone https://github.com/hunter87ff/git-bash-themes.git # clone the repo
+cd git-bash-themes # navigate to the repo
+chmod +x ./install.sh # make the install script executable
+ ./install.sh 
 cd ../
-rm -r -f git-bash-themes
+rm -r -f git-bash-themes 
 ```
 
-3. Restart Git Bash for changes to take effect
+3. Restart Bash for changes to take effect
 
-
-
-## Don't have git installed ?
+## Don't have bash terminal ?
 - try this -
-[Download Git](https://git-scm.com/downloads/win)
+[Git - Bash](https://git-scm.com/downloads/win)
 - or this 
 ```sh
 winget install --id Git.Git -e --source winget
