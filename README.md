@@ -22,8 +22,7 @@ Bash/zsh inspired themes for Bash on Windows and Linux that enhance your termina
 bash #switch to bash shell
 git clone https://github.com/hunter87ff/git-bash-themes.git # clone the repo
 cd git-bash-themes # navigate to the repo
-chmod +x ./install.sh # make the install script executable
- ./install.sh 
+source ./install.sh
 cd ../
 rm -r -f git-bash-themes 
 ```
