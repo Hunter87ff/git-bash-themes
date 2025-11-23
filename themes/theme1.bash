@@ -144,10 +144,6 @@ alias rmf="rm -f"
 alias rmd="rm -rf"
 alias mvf="mv -f"
 alias cpf="cp -f"
-alias install="winget install"
-alias uninstall="winget uninstall"
-alias update="winget upgrade"
-alias installed="winget list"
 
 
 # Enable programmable completion
